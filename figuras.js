@@ -105,3 +105,18 @@ const base = baseTriangulo.value;
 const area = areaTriangulo(base,altura)
 alert(area)
 }
+
+function calcularAltura(){
+  const inputLado1 = document.getElementById("InputLado1Triangulo")
+  const lado1 = inputLado1.value;
+  const inputLado2 = document.getElementById("InputLado2Triangulo")
+  const lado2 = inputLado2.value;
+  const baseTriangulo = document.getElementById("InputBaseTriangulo")
+  const base = baseTriangulo.value;
+  const altura = 
+  (lado1 === lado2) ? 
+  Math.sqrt((lado1*lado2)-((base * base)/4)) : 
+  alert("No es un isoseles, recuerda que los triangulos isosceles tienen sus dos lados iguales")
+  alert(altura.toFixed(2))
+};
+
